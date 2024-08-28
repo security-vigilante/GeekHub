@@ -1,11 +1,12 @@
-import InfoBox from '../../../components/InfoBox/InfoBox';
+'use client';
+
+import { FloatingButton } from '../../../components/Floating/FloatingButton';
 
 export default function App() {
   return (
-    <div className="p-[1rem]">
-      <InfoBox theme="red" location bullet description={[' ']} />
-      <InfoBox theme="primary" location={false} bullet description={['a']} />
-      <InfoBox theme="gray" location bullet description={['a', 'b']} />
+    <div>
+      <h1>Test Page</h1>
+      <FloatingButton type="top" />
     </div>
   );
 }
