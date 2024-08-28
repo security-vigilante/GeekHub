@@ -2,7 +2,6 @@ import { twMerge } from 'tailwind-merge';
 
 type SuggestionChipProps = {
   variant: 'new' | 'hot' | 'warn' | 'notification' | 'report';
-
   isActive?: boolean;
 };
 export default function SuggestionChip({ variant, isActive = true }: SuggestionChipProps) {

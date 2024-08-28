@@ -2,7 +2,6 @@
 
 import { PaginationArrowIcon } from '@/public/index';
 import { usePathname, useRouter } from 'next/navigation';
-
 import { twMerge } from 'tailwind-merge';
 
 type PaginationProps = {
