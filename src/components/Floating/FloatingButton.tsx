@@ -1,7 +1,6 @@
 'use client';
 
-import FloatVectorIcon from '@/public/icons/floatVector.svg';
-import FloatChatIcon from '@/public/icons/floatChat.svg';
+import { TopIcon, ChatIcon } from '@/public/index';
 import { twMerge } from 'tailwind-merge';
 
 type FloatingButtonProps = {
@@ -10,7 +9,7 @@ type FloatingButtonProps = {
   className?: string;
 };
 
-export function FloatingButton({ type, onClick, className }: FloatingButtonProps) {
+export default function FloatingButton({ type, onClick, className }: FloatingButtonProps) {
   const handleClick = () => {
     if (type === 'top') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -19,7 +18,7 @@ export function FloatingButton({ type, onClick, className }: FloatingButtonProps
     }
   };
 
-  const IconComponent = type === 'top' ? FloatVectorIcon : FloatChatIcon;
+  const IconComponent = type === 'top' ? TopIcon : ChatIcon;
 
   return (
     <button
